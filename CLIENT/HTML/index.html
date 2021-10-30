@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--META-->
+    <meta name="description" content="TuneRift allows artists to Upload, Sell, Raffle or Give away music samples and packs."/>
+    <meta property="og:description" content="TuneRift allows artists to Upload, Sell, Raffle or Give away music samples and packs."/>
+    <meta property="og:site_name" content="TUNERIFT | Samples & Packs"/>
+    <meta property="og:image" content="https://tunerift.com/IMG/logo.png"/>
+    <meta property="og:url" content="https://tunerift.com/"/>
+    <meta name="keywords" content="TUNERIFT, Tune, Rift, Music Samples and Packs, Samples, Music, Packs">
+    <meta property="og:type" content="website"/>
+    <link rel="icon" href="../IMG/logo.png">
+    <meta property="og:title" content="TUNERIFT | Samples & Packs"/>
+
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/d3e8a97b92.js" crossorigin="anonymous"></script>
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--TITLE-->
+    <title>TUNERIFT | Samples & Packs</title>
+  </head>
+  <body onload="load()">
+    <script type="text/javascript" language="javascript">  
+      var versionUpdate = (new Date()).getTime();  
+      var style = document.createElement("link");  
+      style.rel = "stylesheet";  
+      style.href = "../CSS/index.css?v=" + versionUpdate;  
+      document.head.appendChild(style);  
+  </script>  
+  <div id="particles-js"></div>
+    <div class="container-fluid p-2" style="background-color: #1c1e23; font-weight: bold; letter-spacing: 1px;">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <a href="/" class="my-auto" style="text-decoration: none; color: white;"><img src="../IMG/logo.png" width="25px"> TUNERIFT</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-4">
+                <li class="nav-item mr-2">
+                  <a class="nav-link" href="/samples"><i class="fas fa-music"></i> Samples</a>
+                </li>
+                <li class="nav-item mr-2">
+                  <a class="nav-link" href="/packs"><i class="fas fa-cube"></i> Packs</a>
+                </li>
+                <li class="nav-item mr-2">
+                  <a class="nav-link" href="/challenge"><i class="fas fa-random"></i> Sample Challenge</a>
+                </li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn-purple btn-md" style="font-weight: 700;" onclick="login()"><i class="fas fa-sign-in-alt"></i> LOGIN</button>
+          </nav>
+      </div>
+    </div>
+
+    
+    <div class="container-fluid" style="margin-top: 15vh; margin-bottom: 0vh; position: relative; z-index: 1;">
+        <img class="animate__animated animate__fadeInDown" src="../IMG/logo.png" width="200px">
+        <h1 class="animate__animated animate__fadeInDown" style="font-weight: 700; letter-spacing: 1px; margin-top: 1vh;">TUNERIFT</h1>
+        <h5 style="color: rgb(153, 153, 153)">RAPIDLY GROWING SAMPLE PACK LIBRARY</h5>
+        <hr>
+        <div class="input-group m-auto animate__animated animate__fadeInUp searchArea">
+          <input type="text" class="form-control searchBox" placeholder="Search Samples & Packs" id="Search">
+          <div class="input-group-append">
+            <button class="btn btn-search btn-sm" type="button" style="font-weight: 700;" onclick="submit()" id="Search">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid p-0 m-0" style="min-width: 100vw; max-width: 100vw; position: absolute; left: 0; bottom: 0; z-index: -1;">
+      <img src="../IMG/waveUp.svg" class="p-0 mr-0 ml-0 mb-0" style="min-width: 100vw; max-width: 100vw; margin-top: -100px;">
+      <div class="container-fluid p-3" style="background-color: #23272A;">
+        <p style="font-weight: 500; font-size: 15px; color: #999">COPYRIGHT &copy; TUNERIFT 2021</p>
+    </div>
+    </div>
+
+
+
+  <!--
+    <footer>
+      <img src="../IMG/waveDown.svg" style="min-width: 100%; max-width: 100%; margin-top: -9px;">
+      <div class="container-fluid">
+      <div class="row py-5">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-3 my-auto" style="">
+            <img class="my-auto" src="../IMG/logo.png" alt="TUNERIFT" width="75">
+            <p class="pt-2" style="font-weight: 900; font-size: 30px; letter-spacing: 5px;">TUNERIFT</p>
+            <hr style="max-width: 40%;">
+            <p style="font-weight: 500; font-size: 15px; color: #999">&copy; TUNERIFT 2021</p>
+        </div>
+        <div class="col-sm">
+        </div>
+        <div class="col-sm-2">
+          <h4><i class="fas fa-file"></i> PAGES</h4>
+          <p><a class="listlink" href="/samples"><i class="fas fa-music"></i> Samples</a></p>
+          <p><a class="listlink" href="/packs"><i class="fas fa-cube"></i> Packs</a></p>
+          <p><a class="listlink" href="/challenge"><i class="fas fa-random"></i> Challenge</a></p>
+          <p><a class="listlink" href="/premium"><i class="fas fa-gem"></i> Premium</a></p>
+        </div>
+        <div class="col-sm-2">
+          <h4><i class="fas fa-ticket-alt"></i> HELP</h4>
+          <p><a class="listlink" href="/terms"><i class="fas fa-book"></i> Terms</a></p>
+          <p><a class="listlink" href="/privacy"><i class="fas fa-gavel"></i> Privacy</a></p>
+          <p><a class="listlink" href="/discord"><i class="fab fa-discord"></i> Discord</a></p>
+          <p><a class="listlink" href="/help"><i class="fas fa-inbox"></i> Help Desk</a></p>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+      </div>
+
+
+      <div class="container-fluid assistance py-5" style="text-align: left;">
+
+        <div class="row">
+          <div class="col-sm"></div>
+          <div class="col-sm-6">
+            <h4 style="font-weight: 700;">NEED SUPPORT?</h4>
+            <h6 style="font-weight: 700; color: rgb(165, 165, 165)">JOIN OUR DISCORD AND SEND US A MESSAGE IN <kbd class="kbd-tag">#SUPPORT</kbd></h6>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-purple btn-lg" style="font-weight: 700;" onclick="joinDiscord()"><i class="fab fa-discord"></i> DISCORD</button>
+          </div>
+          <div class="col-sm"></div>
+        </div>
+      </div>
+    </footer>
+
+  -->
+
+
+    <script src="https://rawgit.com/leizongmin/js-xss/master/dist/xss.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172139788-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-172139788-1');</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" language="javascript">  
+      var versionUpdate = (new Date()).getTime();  
+      var script = document.createElement("script");  
+      script.type = "text/javascript";  
+      script.src = "../JS/index.js?v=" + versionUpdate;  
+      document.body.appendChild(script);  
+  </script>  
+  </body>
+</html>
